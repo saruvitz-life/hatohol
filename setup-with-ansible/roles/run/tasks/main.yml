@@ -1,0 +1,7 @@
+- name: run hatohol
+  shell: pkill hatohol; hatohol
+
+- name: manage.py runserver
+  shell: nohup ./manage.py runserver 0.0.0.0:80 &
+  args:
+    chdir: /usr/local/src/hatohol/client
